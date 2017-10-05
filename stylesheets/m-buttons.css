@@ -1,0 +1,14 @@
+/*
+Author: Max McKinney
+Version: 1.0.0
+*/
+.m-square-button {
+  display: inline-block;
+  padding: 10px 50px;
+  color: #e8e8e8;
+  border: 1px solid #bf616a;
+  text-decoration: none; }
+  .m-square-button:hover {
+    background-color: #bf616a;
+    color: #e8e8e8;
+    text-decoration: none; }

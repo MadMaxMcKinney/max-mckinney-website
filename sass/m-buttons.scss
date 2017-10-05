@@ -1,0 +1,127 @@
+/*
+Author: Max McKinney
+Version: 1.0.0
+*/
+
+// Configuration \\
+
+$m-animation-time: 0.2;
+$m-text-color: #1e1e1e;
+$m-button-color: white;
+$m-button-color-positive: #90C56B;
+$m-button-color-negative: #d86565;
+
+$m-base-size: 0.7rem;
+
+///////////////
+
+.m-button {
+    display: inline-block;
+    padding: 10px 50px;
+    color: $m-button-color;
+    border:  1px solid $m-button-color;
+    text-decoration: none;
+    font-size: $m-base-size;
+	text-align: center;
+
+    &:hover, &:active, &:focus {
+        background-color: $m-button-color;
+        color: $m-text-color !important;
+		text-decoration: none;
+		opacity: 1;
+    }
+}
+
+
+.m-center {
+    margin: 0 auto;
+}
+
+.m-round {
+    border-radius: 11px;
+}
+
+.m-large {
+    font-size: $m-base-size + 0.4;
+}
+
+.m-wide {
+    padding: 10px 80px;
+}
+
+.m-inline {
+    padding: 2px 11px;
+    font-size: $m-base-size - 0.1;
+}
+
+.m-short {
+	padding: 10px 20px;
+}
+
+.m-borderless {
+	border: none;
+}
+
+.m-positive {
+    color: $m-button-color-positive;
+    border-color: $m-button-color-positive;
+
+    &:hover, &:active, &:focus {
+        color:white !important;
+        background-color: $m-button-color-positive;
+    }
+
+}
+
+.m-inverse {
+    border-color: $m-text-color;
+    color: $m-text-color;
+    &:hover, &:active, &:focus {
+        color: $m-button-color !important;
+        background-color: $m-text-color;
+    }
+}
+
+.m-negative {
+    color: $m-button-color-negative;
+    border-color: $m-button-color-negative;
+
+    &:hover, &:active, &:focus {
+        color: white !important;
+        background-color: $m-button-color-negative;
+    }
+
+}
+
+.m-black {
+    color: black;
+    border-color: black;
+
+    &:hover, &:active, &:focus {
+        background-color: black;
+        color: white;
+    }
+
+}
+
+.m-white {
+    color: white;
+    border-color: white;
+
+    &:hover, &:active, &:focus {
+        background-color: white;
+        color: black;
+    }
+
+}
+
+.m-accent {
+	color: $m-text-color;
+	border-color: $m-text-color;
+
+	&:hover, &:active, &:focus {
+        border-color: $m-text-color;
+		background-color: $m-button-color;
+        color: $m-text-color;
+    }
+}
