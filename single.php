@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-	<div class="main-container">
+	<div class="page-grid">
 
         <?php if ( have_posts() ) : ?>
 

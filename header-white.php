@@ -46,7 +46,16 @@
 	</div>
         
 
-	<?php wp_nav_menu( array( 'theme_location' => 'side-menu', 'fallback_cb' => false, 'container' => false, 'menu_class' => 'site-pages white' ) ); ?>
+	<?php //wp_nav_menu( array( 'theme_location' => 'side-menu', 'fallback_cb' => false, 'container' => false, 'menu_class' => 'site-pages white' ) ); ?>
+	<ul id="menu-main-menu" class="site-pages white">
+		<li><a href="https://medium.com/@maxmckinney" target="_blank"><i class="fab fa-lg fa-medium"></i></a></li>
+		<li><a href="https://500px.com/maxmckinney" target="_blank"><i class="fab fa-lg fa-500px"></i></a></li>
+		<li><a href="https://dribbble.com/MaxMcKinney" target="_blank"><i class="fab fa-lg fa-dribbble"></i></a></li>
+		<li><a href="https://twitter.com/timmaxmckinney" target="_blank"><i class="fab fa-lg fa-twitter"></i></a></li>
+		<li><a href="https://github.com/MaxMcKinney" target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/mckinneymax" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a></li>
+	</ul>
+
 
 	<a class="m-menu-btn white"><span></span></a>
 

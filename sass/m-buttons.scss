@@ -10,6 +10,7 @@ $m-text-color: #1e1e1e;
 $m-button-color: white;
 $m-button-color-positive: #90C56B;
 $m-button-color-negative: #d86565;
+$m-button-border-radius: 4px;
 
 $m-base-size: 0.7rem;
 
@@ -23,12 +24,15 @@ $m-base-size: 0.7rem;
     text-decoration: none;
     font-size: $m-base-size;
 	text-align: center;
+	border-radius: $m-button-border-radius;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0);
 
     &:hover, &:active, &:focus {
         background-color: $m-button-color;
         color: $m-text-color !important;
 		text-decoration: none;
 		opacity: 1;
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     }
 }
 

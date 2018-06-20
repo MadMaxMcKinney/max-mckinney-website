@@ -2,11 +2,7 @@
 
 get_header(); ?>
 
-	<!--<div class="page-title-container">
-		<h1 class="page-title"><?php //single_post_title(); ?></h1>
-	</div>-->
-
-	<div class="main-container">
+	<div class="blog-grid">
 
 		<h1 class="page-header-title">Blog.</h1>
 

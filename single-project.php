@@ -21,7 +21,7 @@ get_header(); ?>
 		<?php the_title( '<h1 class="project-post-title">', '</h1>' ); ?>
 	</div>
 
-	<div class="main-container">
+	<div class="project-grid">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

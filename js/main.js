@@ -7,4 +7,8 @@ $(document).ready(function() {
 		});
 	});
 
+	mediumZoom('.photo-grid img', {
+		margin: 56
+	})
+
 });

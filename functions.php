@@ -134,6 +134,13 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+// Remove <br> tags from content
+remove_filter( 'the_content', 'wpautop' );
+$br = false;
+add_filter( 'the_content', function( $content ) use ( $br ) { 
+    return wpautop( $content, $br ); 
+}, 10 );
+
 //
 // REGISTER MENUS \\
 //
@@ -153,62 +160,6 @@ add_action( 'init', 'register_side_menu' );
 //
 
 function create_posttypes() {
-
-	// register_post_type( 'androidapps',
-	// // CPT Options
-	// 	array(
-	// 		'labels' => array(
-	// 			'name' => __( 'Android Apps' ),
-	// 			'singular_name' => __( 'Android App' )
-	// 		),
-	// 		'public' => true,
-	// 		'has_archive' => true,
-	// 		'rewrite' => array('slug' => 'androidapps'),
-    //         'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt'),
-	// 	)
-	// );
-	//
-    // register_post_type( 'websites',
-	// // CPT Options
-	// 	array(
-	// 		'labels' => array(
-	// 			'name' => __( 'Websites' ),
-	// 			'singular_name' => __( 'Website' )
-	// 		),
-	// 		'public' => true,
-	// 		'has_archive' => true,
-	// 		'rewrite' => array('slug' => 'websites'),
-    //         'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt'),
-	// 	)
-	// );
-	//
-    // register_post_type( 'films',
-	// // CPT Options
-	// 	array(
-	// 		'labels' => array(
-	// 			'name' => __( 'Films' ),
-	// 			'singular_name' => __( 'Film' )
-	// 		),
-	// 		'public' => true,
-	// 		'has_archive' => true,
-	// 		'rewrite' => array('slug' => 'films'),
-    //         'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt'),
-	// 	)
-	// );
-	//
-    // register_post_type( 'contractor-work',
-	// // CPT Options
-	// 	array(
-	// 		'labels' => array(
-	// 			'name' => __( 'Contractor Work' ),
-	// 			'singular_name' => __( 'Contractor Work' )
-	// 		),
-	// 		'public' => true,
-	// 		'has_archive' => true,
-	// 		'rewrite' => array('slug' => 'contractor-work'),
-    //         'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt'),
-	// 	)
-	// );
 
 	register_post_type( 'project',
 	// CPT Options

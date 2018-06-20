@@ -1,15 +1,19 @@
 {
-  "name": "max-mckinney-webontheside",
+  "name": "max-mckinney",
   "version": "1.0.0",
-  "description": "",
+  "description": "Max McKinney's personal portfolio website",
   "main": "index.js",
-  "dependencies": {
-    "jquery": "^3.1.1",
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxMcKinney/max-mckinney-website"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxMcKinney/max-mckinney-website/issues"
+  },
+  "homepage": "https://github.com/MaxMcKinney/max-mckinney-website#readme"
 }
