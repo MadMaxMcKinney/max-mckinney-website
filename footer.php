@@ -13,7 +13,7 @@
 
 	<div class="page-footer-container">
 		<a class="email-link" href="mailto:hello@maxmckinney.com">hello@maxmckinney.com</a>
-		<p class="footer-description">I’m a developer and designer with a focus in web and native mobile development. I build cars on the side.</p>
+		<!--<p class="footer-description">I’m a developer and designer with a focus in web and native mobile development. I build cars on the side.</p>-->
 	</div>
 
 </footer>
@@ -26,10 +26,6 @@
 
 <?php wp_footer(); ?>
 
-<!-- Masonry -->
-<script src="<?php bloginfo('template_url'); ?>/js/salvattore.min.js" ></script>
-<!-- WOWjs -->
- <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">‌​</script><script>new WOW().init();</script>
  <!-- Medium Zoom -->
 <script src="<?php bloginfo('template_url'); ?>/js/medium-zoom.min.js" ></script>
 <!-- Main -->

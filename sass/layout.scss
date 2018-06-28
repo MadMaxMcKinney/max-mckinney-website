@@ -68,13 +68,6 @@ body {
         background-color: #864cbf
     }
 }
-// Animation for the background
-body {
-    //-webkit-animation: bgcolor 20s infinite;
-   // animation: bgcolor 10s infinite;
-    //-webkit-animation-direction: alternate;
-   //animation-direction: alternate;
-}
 
 u {
 	color: $accent-color;
@@ -654,10 +647,10 @@ strong {
 // Blog
 
 .project-post-title {
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
 	font-size: 3.7rem;
-	font-family: 'palintino', serif;
+	//font-family: 'palintino', serif;
 }
 
 @media (max-width: $phone-screen) {
@@ -786,7 +779,7 @@ strong {
 	margin-bottom: 30px;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-end;
 
 	.footer-description {
 		max-width: 400px;
@@ -834,6 +827,16 @@ strong {
 		color: $accent-color !important;
 	}
 
+}
+
+.award {
+	border-radius: 4px;
+    box-shadow: 0px 13px 29px #00000045;
+    opacity: 1;
+    width: 150px;
+    height: auto;
+    padding: 0px;
+    margin: 0;
 }
 
 .nohover {
