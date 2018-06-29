@@ -44,9 +44,7 @@
 	<div class="site-logo-container">
 		<a href="/"><img class="site-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/max-white-v2.png" /></a>
 	</div>
-        
 
-	<?php //wp_nav_menu( array( 'theme_location' => 'side-menu', 'fallback_cb' => false, 'container' => false, 'menu_class' => 'site-pages' ) ); ?>
 	<ul id="menu-main-menu" class="site-pages">
 		<li><a href="https://www.linkedin.com/in/mckinneymax" target="_blank"><i class="fab fa-lg fa-linkedin"></i></a></li>
 		<li><a href="https://medium.com/@maxmckinney" target="_blank"><i class="fab fa-lg fa-medium"></i></a></li>
@@ -56,10 +54,4 @@
 		<li><a href="https://github.com/MaxMcKinney" target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
 	</ul>
 
-	<a class="m-menu-btn"><span></span></a>
-
-</div>
-
-<div class="m-overlay">
-	<?php wp_nav_menu( array( 'theme_location' => 'side-menu', 'fallback_cb' => false, 'container' => false, 'menu_class' => 'm-menu' ) ); ?>
 </div>

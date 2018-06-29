@@ -465,6 +465,12 @@ strong {
 	}
 }
 
+@media(max-width: $small-screen) {
+	.navmenu .site-pages {
+		margin-right: 0;
+	}
+}
+
 // M Menu
 
 .m-menu {
@@ -484,40 +490,11 @@ strong {
 	}
 }
 
-.m-menu-btn span, 
-.m-menu-btn span:before,
-.m-menu-btn span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 1px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-}
-.m-menu-btn span:before {
-  top: -10px;
-}
-.m-menu-btn span:after {
-  bottom: -10px; 
-}
-
-.m-menu-btn {
-	display: none;
-	position: relative;
-	right: 40px;
-}
-
-@media (max-width: $small-screen) {
+@media (max-width: $phone-screen) {
 	.navmenu {
 		.site-pages {
 			display: none;
 		}
-	}
-	
-	.m-menu-btn {
-		display: inline-block;
 	}
 }
 
@@ -534,62 +511,6 @@ strong {
 
 .m-enabled {
 	display: block;
-}
-
-.m-overlay {
-	display: none;
-	flex-direction: column;
-	position: absolute;
-	z-index: 9999;
-	background: $accent-color;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 25px 20px;
-	animation: fade-in;
-	animation-duration: 0.4s;
-	overflow: scroll;
-
-	.site-logo {
-		display: inline-block;
-		/* float: left; */
-		height: 45px;
-		width: 45px;
-		padding: 0;
-		margin-right: 17px;
-	}
-
-	.site-title {			
-		font-size: 1.3rem;
-		width: 100%;
-	}
-
-	.site-logo-container {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		align-items: center;
-		margin-bottom: 40px;
-	}
-
-	.site-outside-links {
-    	justify-content: flex-start;
-		padding-top: 20px;
-	}
-
-	.site-outside-links li a {
-    	color: #1e1e1e;
-		&:hover, &:active, &:focus {
-			color: black;
-		}
-	}
-
-	.site-title {
-		&:hover, &:active, &:focus {
-			color: black;
-		}
-	}
 }
 
 // Sidebar
@@ -641,6 +562,20 @@ strong {
 
 	li {
 		padding: 8px 50px;
+	}
+}
+
+.site-pages.footer-pages {
+	display: none;
+	flex-direction: row;
+}
+@media(max-width: $phone-screen) {
+	.site-pages.footer-pages {
+		display: flex;
+		margin-top: 24px;
+		li {
+			padding: 8px 15px;
+		}
 	}
 }
 
@@ -793,6 +728,12 @@ strong {
 		display: block;
 		margin-top: 40px;
 		font-weight: 600;
+	}
+}
+
+@media (max-width: $small-screen) {
+	.page-footer {
+		padding: 0 $padding-page;
 	}
 }
 

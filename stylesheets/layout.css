@@ -423,6 +423,9 @@ strong {
         font-size: 0.7rem;
         font-weight: 500; }
 
+@media (max-width: 1155px) {
+  .navmenu .site-pages {
+    margin-right: 0; } }
 .m-menu {
   list-style: none;
   padding: 0;
@@ -436,35 +439,9 @@ strong {
     .m-menu li a:hover, .m-menu li a:active, .m-menu li a:focus {
       color: white; }
 
-.m-menu-btn span,
-.m-menu-btn span:before,
-.m-menu-btn span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 1px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: ''; }
-
-.m-menu-btn span:before {
-  top: -10px; }
-
-.m-menu-btn span:after {
-  bottom: -10px; }
-
-.m-menu-btn {
-  display: none;
-  position: relative;
-  right: 40px; }
-
-@media (max-width: 1155px) {
+@media (max-width: 715px) {
   .navmenu .site-pages {
-    display: none; }
-
-  .m-menu-btn {
-    display: inline-block; } }
+    display: none; } }
 .m-subtitle {
   margin-top: 60px;
   font-weight: 500;
@@ -476,46 +453,6 @@ strong {
 
 .m-enabled {
   display: block; }
-
-.m-overlay {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  z-index: 9999;
-  background: #ffc107;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 25px 20px;
-  animation: fade-in;
-  animation-duration: 0.4s;
-  overflow: scroll; }
-  .m-overlay .site-logo {
-    display: inline-block;
-    /* float: left; */
-    height: 45px;
-    width: 45px;
-    padding: 0;
-    margin-right: 17px; }
-  .m-overlay .site-title {
-    font-size: 1.3rem;
-    width: 100%; }
-  .m-overlay .site-logo-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 40px; }
-  .m-overlay .site-outside-links {
-    justify-content: flex-start;
-    padding-top: 20px; }
-  .m-overlay .site-outside-links li a {
-    color: #1e1e1e; }
-    .m-overlay .site-outside-links li a:hover, .m-overlay .site-outside-links li a:active, .m-overlay .site-outside-links li a:focus {
-      color: black; }
-  .m-overlay .site-title:hover, .m-overlay .site-title:active, .m-overlay .site-title:focus {
-    color: black; }
 
 .site-title, .site-title a {
   font-weight: 900;
@@ -558,6 +495,16 @@ strong {
   .site-pages li {
     padding: 8px 50px; }
 
+.site-pages.footer-pages {
+  display: none;
+  flex-direction: row; }
+
+@media (max-width: 715px) {
+  .site-pages.footer-pages {
+    display: flex;
+    margin-top: 24px; }
+    .site-pages.footer-pages li {
+      padding: 8px 15px; } }
 .project-post-title {
   font-weight: 600;
   text-align: center;
@@ -649,6 +596,9 @@ strong {
     margin-top: 40px;
     font-weight: 600; }
 
+@media (max-width: 1155px) {
+  .page-footer {
+    padding: 0 24px; } }
 @media (max-width: 715px) {
   .page-footer {
     flex-direction: column;
